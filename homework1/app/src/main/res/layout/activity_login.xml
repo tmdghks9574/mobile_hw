@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="110dp"
+        app:srcCompat="@drawable/pizza"
+        />
+
+    <EditText
+        android:id="@+id/idEditText"
+        style="@style/login_style1"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="85dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:hint="@string/ID"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <EditText
+        android:id="@+id/pwEditText"
+        style="@style/login_style1"
+        android:layout_below="@+id/idEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="85dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:hint="@string/PASSWORD"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@+id/signup"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:background="@drawable/teduri"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="85dp"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        android:background="@drawable/teduri"
+        />
+
+
+</RelativeLayout>

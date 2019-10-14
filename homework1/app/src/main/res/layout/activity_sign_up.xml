@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/pizza"
+        />
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/teduri"
+            />
+
+        <EditText
+            android:id="@+id/nameinput"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:hint="이름을 입력하세요"
+            android:inputType="text"
+            android:background="#909DDA"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/idinput"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="ID를 입력하세요"
+        android:inputType="textEmailAddress"
+        android:background="#9FA5BE"
+        android:textSize="24dp"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/pwinput"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="PW를 입력하세요"
+        android:inputType="textPassword"
+        android:background="#A25EAD"
+        android:textSize="24dp"
+        android:textStyle="italic"
+
+        />
+
+    <EditText
+        android:id="@+id/phoneinput"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="전화번호를 입력하세요"
+        android:inputType="phone"
+        android:background="#85B1D5"
+        android:textSize="24dp"
+        android:textStyle="normal"
+
+        />
+
+    <EditText
+        android:id="@+id/addressinput"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="주소를 입력하세요"
+        android:inputType="text"
+        android:background="#B9B16B"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="약관동의 안하면 가입안돼요!"
+        android:background="#AC854B"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        />
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동의"
+            />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="동의안함"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:background="@drawable/teduri"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="취소"
+            android:background="@drawable/teduri"
+            />
+
+    </LinearLayout>
+</LinearLayout>
